@@ -14,7 +14,7 @@ tienen descuentos diferentes. Se desea saber entonces por cada compra cuanto tie
 **R/** Cedula, Rol, el codido del producto y la cantidad.
 
 ### 4. Cual serıa su salida?
-**R/** la cedula, el saldo a pagar con descuento incluido
+**R/** El rol, la cedula, el producto,  el saldo a pagar con descuento incluido
 
 ### 5. Como lo calcula?
 **R/** Se le resta el porcentaje al valor total de la compra, y la compra se calcula sumando los precios de un producto, si un producto tiene mas de 1 unidad entonces se multiplica el precio por las cantidades y se suma a la compra total
