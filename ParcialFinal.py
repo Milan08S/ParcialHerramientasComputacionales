@@ -5,18 +5,17 @@
 ## Desarrollo Parcial Final Herramientas
 
 def descuentosCafeteria(d):
-    ce = int(input("Digita tu cedula: "))
+    cedula = int(input("Digita tu cedula: "))
     rol = input("Estudiante o Profesor: ")
     print(d)
-    res = int(input("Digite codigo de producto: "))
-    ca = int(input("Digite cantidad: "))
-    total = d[res][1] * ca
+    producto = int(input("Digite codigo de producto: "))
+    cantidad = int(input("Digite cantidad: "))
+    total = d[producto][1] * cantidad
     if rol == 'Profesor':
         total = total * 0.8
     if rol == 'Estudiante':
         total = total * 0.5
-        print("El " + str(rol) + " con Cedula " + str(ce) + " debe pagar " + str(total) + " por el producto " + str(res))
-    else:
-        print("No hay cantidad del producto")
+        print("El " + str(rol) + " con Cedula " + str(cedula) + " debe pagar " + str(total) + " por el producto " + str(producto))
+
 d = {23:["Gaseosa", 3000], 45:["Cheetos", 2200]}
 descuentosCafeteria(d)    
